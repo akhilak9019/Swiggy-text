@@ -51,6 +51,16 @@
         padding: 0;
 
       }
+      .bottom1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /*background-color: rgb(212, 210, 210);*/
+        box-sizing: border-box;
+        margin: -4rem 0rem;
+        padding: 0;
+      }
       .photo{
         flex: 1 0 10%;
         margin: 1rem;
@@ -58,7 +68,15 @@
         padding: 1rem;
         text-align: center;
       }
+      .photo2{
+        flex: 1 0 10%;
+        margin: 1rem;
+        border-radius: 0.25rem;
+        padding: 1rem;
+        text-align: center;
+      }
       .mid{
+        margin: 5rem;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-row-start: 1rem;
@@ -97,6 +115,10 @@
           flex-basis: 80%;
           margin: 1rem 0;
         }
+        .photo2{
+          flex-basis: 80%;
+          margin: 1rem 0;
+        }
         .mid{
           grid-template-columns: repeat(2,1fr);
         }
@@ -108,6 +130,9 @@
           display: none;
         }
         .photo{
+          flex-basis: 100%;
+        }
+        .photo2{
           flex-basis: 100%;
         }
         .mid{
@@ -201,10 +226,25 @@
 
     </div>
     <div class="bottom">
-      <h1>Our picks for you</h1>
-      <div>
-        <!-- Create bottom part here  -->
+      <h1 style="margin: 5rem;">Our picks for you</h1>
+     </div>
+     <div class="bottom1">
+      <!-- Create the top section here  -->
+      <div class="photo"> 
+        <img style="width: 350px; height: 350px; " src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Offers_yqoiuk" alt="">
+        
       </div>
-    </div>
+      <div class="photo"> 
+        <img style="width: 350px; height: 350px; " src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Offers_yqoiuk" alt="">
+        
+      </div>
+      <div class="photo"> 
+        <img style="width: 350px; height: 350px;" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Offers_yqoiuk" alt="">
+        
+      </div>
+      
+      
   </body>
 </html>
+
+
